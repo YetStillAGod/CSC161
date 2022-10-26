@@ -13,7 +13,7 @@ def is_leap_year(year):
 		return False
 
 def is_valid_date(date, month, year):
-	if month == 1:
+	if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
 		if date <= 31 and date >= 1:
 			return True
 		else:
@@ -30,53 +30,8 @@ def is_valid_date(date, month, year):
 				return True
 			else:
 				return False
-	elif month == 3:
-		if date <= 31 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 4:
+	elif month == 4 or month == 6 or month == 9 or month == 11:
 		if date <= 30 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 5:
-		if date <= 31 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 6:
-		if date <= 30 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 7:
-		if date <= 31 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 8:
-		if date <= 31 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 9:
-		if date <= 30 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 10:
-		if date <= 31 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 11:
-		if date <= 30 and date >= 1:
-			return True
-		else:
-			return False
-	elif month == 12:
-		if date <= 31 and date >= 1:
 			return True
 		else:
 			return False
